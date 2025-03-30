@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    overflow: hidden; /* 避免捲動條 */
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#canvas-container {
+    flex-grow: 1; /* 讓 canvas 容器填滿剩餘空間 */
+    position: relative; /* 讓 canvas 絕對定位 */
+}
+
+#c {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#info {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    z-index: 10; /* 確保在 canvas 上方 */
+}
+
+#info button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
