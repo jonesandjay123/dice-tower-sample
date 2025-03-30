@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# macOS specific files
+.DS_Store
+
+# Lock file (如果你確定要移除，如果想保留就刪掉下面這行)
+package-lock.json
+
+# Optional: Build directories, log files, env files, etc.
+# build/
+# dist/
+# *.log
+# .env
